@@ -1,0 +1,308 @@
+*{
+    background-color: #03051a;
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: ari;
+    src: url(Arista-Pro-Bold-trial.ttf);
+}
+@font-face {
+    font-family: bret;
+    src: url(Breetty\ Regular.otf);
+}
+
+@keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+
+@keyframes expand{
+    from{
+        letter-spacing: 0;
+        font-weight: none;
+    }
+    to{
+        letter-spacing: 5;
+        font-weight: bold;
+    }
+}
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 10px white;
+    }
+    50% {
+        text-shadow: 0 0 20px orange;
+    }
+    100% {
+        text-shadow: 0 0 10px yellow;
+    }
+}
+@keyframes txt{
+    0%{
+        font-size: 40px;
+    }
+
+    100%{
+        font-size: 60px;
+    }
+}
+@keyframes txts{
+    0%{
+        font-size: 35px;
+    }
+    100%{
+        font-size: 45px;
+    }
+}
+@keyframes aim{
+    0%{
+        width: 32%;
+    }
+    100%{
+        width: 37%;
+    }
+ 
+}
+.hd {
+    color: aliceblue;
+    font-size: larger;
+    font-family: bret;
+    margin-top: 5%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 55px;
+    animation: glow 4s infinite ;  
+}
+h1{
+    animation: fadein 2s;
+    z-index: 1;
+}
+.hd:hover{
+    animation: glow 1s infinite;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: antiquewhite;
+    animation: txts 0.5s,glow 1s infinite;
+    animation-fill-mode: forwards;
+}
+
+.nav{
+    display: flex;
+    font-size: 30px;
+    font-family: ari;
+    justify-content: right;
+    margin-top: -140px;
+    margin-right: 100px;
+    animation: fadein 2s;
+    z-index: 0;
+} 
+li{
+    color: #03051a;
+}      
+.cd{
+    animation: fadein 4s;
+    position: relative;
+    margin-top: 5%;
+    margin-left: 20%;
+}
+.cd img{
+    border-radius: 10px;
+    position: absolute;
+    
+}
+.im1{
+    top:   100px;
+    left: 50px;
+    z-index: 1;
+    box-shadow: 10px 10px 5px #03051a;
+   
+}
+
+.im2{
+    top: 30px;
+    left: 200px;
+    z-index: 3;
+    box-shadow: 10px 10px 5px #03051a;
+}
+.im3{
+    left: 400px;
+    top: 100px;
+    z-index: 1;  
+    box-shadow: 10px 10px 5px #03051a; 
+    transition: left 0.5s;
+}
+img:hover{
+    z-index: 4;
+    animation: aim 0.5s;
+    animation-fill-mode: forwards;   
+}
+.hd1{
+    margin-top: 50%;
+    color: aliceblue;
+    font-size: 40;
+    letter-spacing: 5px;
+    font-family: bret;
+    animation: glow 3s infinite;
+}
+.hd1 h2{
+    animation: fadein 3s;
+}
+.hd1:hover{
+    animation: txt 0.5s, glow 1s infinite;
+    animation-fill-mode: forwards;
+}
+.hd2{
+    animation: fadein 3s;
+    font-family: ari;
+    color: #5a1771;
+    font-size: 30px;
+}
+.hd2 p span{
+    font-family: bret;
+    color: antiquewhite;
+    font-size: 35px;
+    animation: glow 3s infinite;
+}
+.hd2 p:hover{
+    animation: txts 0.5s;
+    animation-fill-mode: forwards;
+}
+.hd2  p span:hover{
+    animation: txt 0.5s,glow 1s infinite;
+    animation-fill-mode: forwards;
+}
+.hd3 button{
+    animation: fadein 3s;
+    border-radius: 15px;
+    font-size: 40px;
+    background-color: #5a1771;
+    border: none;
+  
+}
+.hd3 a{
+color: aliceblue;
+background-color: #5a1771;
+font-family: ari;
+}
+.hd3 button:hover{
+    background-color: #781e97;
+}
+.hd3 a:hover{
+    background-color: #781e97;
+}
+.hd33 button{
+    margin-top: 60px;
+    animation: fadein 3s;
+    border-radius: 15px;
+    font-size: 40px;
+    background-color: #5a1771;
+    border: none;
+  
+}
+.hd33 a{
+color: aliceblue;
+background-color: #5a1771;
+font-family: ari;
+}
+.hd33 button:hover{
+    background-color: #781e97;
+}
+.hd33 a:hover{
+    background-color: #781e97;
+}
+.c4{
+    
+    margin-top: 7%;
+}
+
+.c4 button{
+    font-size: 30;
+    border: none;
+    margin: 10px;
+    
+}
+.c4 button:hover{
+    animation: glow 1s infinite;
+}
+.hd4{
+    animation: fadein 3s;
+    font-family: ari;
+    color: #781e97;
+    margin-top: 10%;
+    border-radius: 20px;
+    height: fit-content;
+    width: 100%;
+    z-index: 4;
+}
+.hd4 h3{
+    color: white;
+    animation: glow 3s infinite;
+    font-size: 40;
+}
+.hd4 h3:hover{
+    animation: glow 1s infinite,txts 0.5s;
+    animation-fill-mode: forwards;
+}
+.hd4 p{
+    width: 70%;
+    word-spacing: 3px;
+    line-height: 1;
+    letter-spacing: 1px;
+    font-size: 25px;
+
+}
+
+@media screen and (max-width:720px) {
+    .nav{
+        font-size: 20px;
+        margin: auto;
+        margin-top: 5%;
+    }
+    h1{
+        margin: auto;
+    }
+    .cd{
+        justify-content: center;
+        margin: auto;
+        margin-top: 10%;
+    }
+    img{
+        margin: auto;
+    }
+   .im2{
+    width: 35%;
+    margin: auto;
+    left: 35%;
+  
+   }
+    .im1{
+        margin: auto;
+    }
+    .im1:hover{
+        z-index: 4;
+    }
+    .im3{margin: auto;
+    left: 60%; }
+    .im3:hover{
+        z-index: 4;
+    }
+    .hd1{
+        margin: auto;
+        margin-top: 80%;
+    }
+    .hd3{
+        margin-top: 4%;
+    }
+    .c4{
+        margin-top: 20%;
+    }
+    .hd4{
+        margin-top: 20%;
+    }
+}
